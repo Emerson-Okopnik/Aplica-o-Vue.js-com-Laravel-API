@@ -68,15 +68,15 @@ No app
      ```bash
      npm run dev     
 
-#Estrutura de Funcionalidades
+## Estrutura de Funcionalidades
 
 Autenticação
 Implementada via login e token JWT.
 O status de autenticação é armazenado no localStorage e validado pela função isAuthenticated em auth.js.
 
 Telas e Funcionalidades
--Login - Tela de login inicial, que restringe o acesso às demais funcionalidades da aplicação.
--Listagem de Pessoas - Exibe uma lista de pessoas cadastradas com detalhes.
--Cadastro de Pessoas - Permite adicionar um novo registro de pessoa.
--Alteração de Pessoa - Permite editar dados de uma pessoa existente.
+- Login - Tela de login inicial, que restringe o acesso às demais funcionalidades da aplicação.
+- Listagem de Pessoas - Exibe uma lista de pessoas cadastradas com detalhes.
+- Cadastro de Pessoas - Permite adicionar um novo registro de pessoa.
+- Alteração de Pessoa - Permite editar dados de uma pessoa existente.
 -Exclusão de Pessoa - Permite remover uma pessoa cadastrada.
