@@ -10,57 +10,55 @@ Esta aplicação permite gerenciar um cadastro de pessoas com funcionalidades de
 - MySQL ou PostgreSQL
 
 1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
+    ```bash
+       git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
    
 Na API
-  2. Instale as dependências do Laravel
-  
-     ```bash
-     composer install
-     
-   3. Crie um arquivo .ENV e configure seu Banco da dados, após gere as migrations
-  
-     ```bash
+2. Instale as dependências do Laravel
+
+       composer install
+       
+3. Crie um arquivo .ENV e configure seu Banco da dados, após gere as migrations
+      
+    ```bash
      php artisan migrate
-   4. Instale o pacote JWT do Laravel 
+4. Instale o pacote JWT do Laravel 
   
-     ```bash
+   ```bash
      composer require tymon/jwt-auth
   
-  5. Publique o arquivo de configuração do JWT:
+5. Publique o arquivo de configuração do JWT:
   
       ```bash
         git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
        
-  6. Gere uma chave secreta para o JWT
+ 6. Gere uma chave secreta para o JWT
   
      ```bash
      php artisan jwt:secret
 
-  7. Inicie o Laravel
+ 7. Inicie o Laravel
   
      ```bash
      php artisan serve --host=localhost
-
+ 
 No app   
 
-8. Instale as dependências do Vue.js:
+ 8. Instale as dependências do Vue.js:
    
      ```bash
      npm install
-9. Instale Axios  
+ 9. Instale Axios  
 
      ```bash
      npm install vue axios
 
-10. Instale o Vite
+ 10. Instale o Vite
 
      ```bash
      git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
 
-11. Inicie Vue.js:
+ 11. Inicie Vue.js:
 
      ```bash
      npm run dev     
