@@ -10,37 +10,41 @@ Esta aplicação permite gerenciar um cadastro de pessoas com funcionalidades de
 - MySQL ou PostgreSQL
 
 1. Clone o repositório:
+
     ```bash
-       git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
+    git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
    
 Na API
+
 2. Instale as dependências do Laravel
 
-       composer install
+    ```bash
+    composer install
        
-3. Crie um arquivo .ENV e configure seu Banco da dados, após gere as migrations
+2. Crie um arquivo .ENV e configure seu Banco da dados, após gere as migrations
       
     ```bash
-     php artisan migrate
-4. Instale o pacote JWT do Laravel 
+    php artisan migrate
+    
+3. Instale o pacote JWT do Laravel 
   
    ```bash
-     composer require tymon/jwt-auth
+   composer require tymon/jwt-auth
   
-5. Publique o arquivo de configuração do JWT:
+4. Publique o arquivo de configuração do JWT:
   
-      ```bash
-        git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
+   ```bash
+   git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
        
- 6. Gere uma chave secreta para o JWT
+ 5. Gere uma chave secreta para o JWT
   
-     ```bash
-     php artisan jwt:secret
+    ```bash
+    php artisan jwt:secret
 
- 7. Inicie o Laravel
+ 6. Inicie o Laravel
   
-     ```bash
-     php artisan serve --host=localhost
+    ```bash
+    php artisan serve --host=localhost
  
 No app   
 
@@ -48,6 +52,7 @@ No app
    
      ```bash
      npm install
+
  9. Instale Axios  
 
      ```bash
@@ -63,13 +68,15 @@ No app
      ```bash
      npm run dev     
 
-Estrutura de Funcionalidades
+#Estrutura de Funcionalidades
+
 Autenticação
 Implementada via login e token JWT.
 O status de autenticação é armazenado no localStorage e validado pela função isAuthenticated em auth.js.
+
 Telas e Funcionalidades
-Login - Tela de login inicial, que restringe o acesso às demais funcionalidades da aplicação.
-Listagem de Pessoas - Exibe uma lista de pessoas cadastradas com detalhes.
-Cadastro de Pessoas - Permite adicionar um novo registro de pessoa.
-Alteração de Pessoa - Permite editar dados de uma pessoa existente.
-Exclusão de Pessoa - Permite remover uma pessoa cadastrada.
+-Login - Tela de login inicial, que restringe o acesso às demais funcionalidades da aplicação.
+-Listagem de Pessoas - Exibe uma lista de pessoas cadastradas com detalhes.
+-Cadastro de Pessoas - Permite adicionar um novo registro de pessoa.
+-Alteração de Pessoa - Permite editar dados de uma pessoa existente.
+-Exclusão de Pessoa - Permite remover uma pessoa cadastrada.
