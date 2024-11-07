@@ -34,8 +34,8 @@ Na API
 4. Publique o arquivo de configuração do JWT:
   
    ```bash
-   git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
-       
+   php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+   
  5. Gere uma chave secreta para o JWT
   
     ```bash
@@ -61,8 +61,8 @@ No app
  10. Instale o Vite
 
      ```bash
-     git clone https://github.com/Emerson-Okopnik/Aplica-o-Vue.js-com-Laravel-API.git
-
+     npm install vite
+     
  11. Inicie Vue.js:
 
      ```bash
