@@ -44,7 +44,9 @@ export default {
         
         localStorage.setItem('token', response.data.token);
 
-        this.$router.push({ name: 'Home' });
+        this.$router.push({ name: 'Home' }).then(() => {
+          window.location.reload();
+        });
       } catch (error) {
         console.error('Erro no registro:', error);
         alert('Erro ao registrar. Por favor, tente novamente.');
