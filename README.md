@@ -20,7 +20,6 @@ Na API
 
     ```bash
     composer install
-       
 2. Crie um arquivo .ENV e configure seu Banco da dados, após gere as migrations
       
     ```bash
